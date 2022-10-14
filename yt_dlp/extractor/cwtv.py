@@ -88,6 +88,7 @@ class CWTVIE(InfoExtractor):
             'series': video_data.get('series_name'),
             'season_number': int_or_none(season),
             'episode_number': int_or_none(episode),
+            'thumbnail': video_data.get('thumbnail'),
             'timestamp': parse_iso8601(video_data.get('start_time')),
             'age_limit': parse_age_limit(video_data.get('rating')),
             'ie_key': 'ThePlatform',
